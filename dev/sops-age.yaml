@@ -17,6 +17,8 @@ metadata:
   name: ostock-sops-age
   namespace: infra
 spec:
+  dependsOn:
+    - name: sops-age
   decryption:
     provider: sops
     secretRef:
