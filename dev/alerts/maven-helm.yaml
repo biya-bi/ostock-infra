@@ -15,3 +15,5 @@ spec:
   eventSources:
     - kind: GitRepository
       name: config-service
+    - kind: GitRepository
+      name: eureka-service
