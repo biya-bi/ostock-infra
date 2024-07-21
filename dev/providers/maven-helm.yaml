@@ -1,0 +1,8 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta3
+kind: Provider
+metadata:
+  name: maven-helm
+  namespace: ostock
+spec:
+  type: generic
+  address: http://el-maven-helm.infra.svc.cluster.local:8080/
