@@ -1,0 +1,17 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: ostock-helm
+  namespace: ostock
+spec:
+  interval: 1m
+  url: ssh://github.com/biya-bi/ostock-helm.git
+  ref:
+    branch: main
+  secretRef:
+    name: ssh-rsa-credentials
+  ignore: |
+    # Exclude all
+    /*
+    # Include charts directory
+    !/charts/
