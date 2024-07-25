@@ -17,3 +17,5 @@ spec:
       name: config-service
     - kind: GitRepository
       name: eureka-service
+    - kind: GitRepository
+      name: organization-service
