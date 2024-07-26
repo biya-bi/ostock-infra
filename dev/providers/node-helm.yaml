@@ -1,0 +1,8 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta3
+kind: Provider
+metadata:
+  name: node-helm
+  namespace: ostock
+spec:
+  type: generic
+  address: http://el-node-helm.infra.svc.cluster.local:8080/

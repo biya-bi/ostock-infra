@@ -1,0 +1,17 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta3
+kind: Alert
+metadata:
+  name: node-helm
+  namespace: ostock
+spec:
+  providerRef:
+    name: node-helm
+  eventSeverity: info
+  eventMetadata:
+    nodeContextDir: '.'
+    helmChartReleaseNamespace: ostock
+    helmChartsDir: charts
+    helmChartRepoUrl: git@github.com:biya-bi/ostock-helm.git
+  eventSources:
+    - kind: GitRepository
+      name: angular-frontend
