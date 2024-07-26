@@ -19,3 +19,5 @@ spec:
       name: eureka-service
     - kind: GitRepository
       name: organization-service
+    - kind: GitRepository
+      name: licensing-service
