@@ -21,3 +21,5 @@ spec:
       name: organization-service
     - kind: GitRepository
       name: licensing-service
+    - kind: GitRepository
+      name: gateway-service
