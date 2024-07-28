@@ -9,6 +9,7 @@ spec:
   eventSeverity: info
   eventMetadata:
     nodeContextDir: '.'
+    nodeBuildOutputDir: 'dist'
     helmChartReleaseNamespace: ostock
     helmChartsDir: charts
     helmChartRepoUrl: git@github.com:biya-bi/ostock-helm.git
