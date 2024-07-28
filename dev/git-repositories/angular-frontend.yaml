@@ -9,4 +9,4 @@ spec:
     branch: main
   secretRef:
     name: ssh-rsa-credentials
-  url: ssh://github.com/biya-bi/ostock-angular.git
+  url: ssh://github.com/biya-bi/ostock-angular-frontend.git
