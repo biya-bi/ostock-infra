@@ -7,7 +7,7 @@ spec:
   interval: 1m
   url: ssh://github.com/biya-bi/ostock-helm.git
   ref:
-    branch: main
+    branch: develop
   secretRef:
     name: ssh-rsa-credentials
   ignore: |

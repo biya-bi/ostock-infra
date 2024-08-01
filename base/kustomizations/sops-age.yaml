@@ -11,7 +11,7 @@ spec:
     secretRef:
       name: sops-age
   interval: 10m0s
-  path: ./dev/sops-age
+  path: ./${ENVIRONMENT}/sops-age
   prune: true
   sourceRef:
     kind: GitRepository

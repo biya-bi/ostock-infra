@@ -1,12 +1,12 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
-  name: gateway-service
+  name: cross-cutting-concerns
   namespace: ostock
 spec:
   interval: 1m0s
   ref:
-    branch: main
+    branch: develop
   secretRef:
     name: ssh-rsa-credentials
-  url: ssh://github.com/biya-bi/ostock-gateway-service.git
+  url: ssh://github.com/biya-bi/ostock-cross-cutting-concerns.git
