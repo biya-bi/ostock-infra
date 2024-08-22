@@ -20,3 +20,12 @@ patches:
     kind: Kustomization
     name: ostock-sops-age
     namespace: infra
+- patch: |-
+    - op: replace
+      path: /data/jwt-issuer-uri
+      value: https://keycloak.nguiland.org/realms/ostock
+  target:
+    version: v1
+    kind: ConfigMap
+    name: keycloak
+    namespace: ostock

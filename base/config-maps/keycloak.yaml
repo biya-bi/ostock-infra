@@ -4,5 +4,4 @@ metadata:
   name: keycloak
   namespace: ostock
 data:
-  jwt-issuer-uri: http://keycloak.infra:8080/realms/ostock
-
+  jwt-issuer-uri: ${KEYCLOAK_JWT_ISSUER_URI}
