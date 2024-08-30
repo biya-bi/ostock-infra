@@ -4,6 +4,7 @@ resources:
 - alerts
 - config-maps
 - git-repositories
+- helm-releases
 - kustomizations
 - namespaces
 - providers

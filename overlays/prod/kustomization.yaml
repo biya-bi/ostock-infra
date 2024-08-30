@@ -29,3 +29,13 @@ patches:
     kind: ConfigMap
     name: keycloak
     namespace: ostock
+- patch: |-
+    - op: replace
+      path: /spec/chart/spec/valuesFiles/0
+      value: values.prod.yaml
+  target:
+    group: helm.toolkit.fluxcd.io
+    version: v2
+    kind: HelmRelease
+    name: angular-frontend
+    namespace: ostock

@@ -1,0 +1,16 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: angular-frontend
+  namespace: ostock
+spec:
+  interval: 10m
+  chart:
+    spec:
+      chart: ./charts/angular-frontend
+      sourceRef:
+        kind: GitRepository
+        name: ostock-helm
+      interval: 10m
+      valuesFiles:
+        - ./charts/angular-frontend/values.yaml
