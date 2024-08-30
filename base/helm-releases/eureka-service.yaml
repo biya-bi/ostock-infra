@@ -1,0 +1,16 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: eureka-service
+  namespace: ostock
+spec:
+  interval: 10m
+  chart:
+    spec:
+      chart: ./charts/eureka-service
+      sourceRef:
+        kind: GitRepository
+        name: ostock-helm
+      interval: 10m
+      valuesFiles:
+        - ./charts/eureka-service/values.yaml

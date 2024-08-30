@@ -1,0 +1,16 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: organization-service
+  namespace: ostock
+spec:
+  interval: 10m
+  chart:
+    spec:
+      chart: ./charts/organization-service
+      sourceRef:
+        kind: GitRepository
+        name: ostock-helm
+      interval: 10m
+      valuesFiles:
+        - ./charts/organization-service/values.yaml

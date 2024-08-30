@@ -33,3 +33,53 @@ patches:
     kind: HelmRelease
     name: angular-frontend
     namespace: ostock
+- patch: |-
+    - op: replace
+      path: /spec/chart/spec/valuesFiles/0
+      value: ./charts/config-service/values.dev.yaml
+  target:
+    group: helm.toolkit.fluxcd.io
+    version: v2
+    kind: HelmRelease
+    name: config-service
+    namespace: ostock
+- patch: |-
+    - op: replace
+      path: /spec/chart/spec/valuesFiles/0
+      value: ./charts/eureka-service/values.dev.yaml
+  target:
+    group: helm.toolkit.fluxcd.io
+    version: v2
+    kind: HelmRelease
+    name: eureka-service
+    namespace: ostock
+- patch: |-
+    - op: replace
+      path: /spec/chart/spec/valuesFiles/0
+      value: ./charts/gateway-service/values.dev.yaml
+  target:
+    group: helm.toolkit.fluxcd.io
+    version: v2
+    kind: HelmRelease
+    name: gateway-service
+    namespace: ostock
+- patch: |-
+    - op: replace
+      path: /spec/chart/spec/valuesFiles/0
+      value: ./charts/licensing-service/values.dev.yaml
+  target:
+    group: helm.toolkit.fluxcd.io
+    version: v2
+    kind: HelmRelease
+    name: licensing-service
+    namespace: ostock
+- patch: |-
+    - op: replace
+      path: /spec/chart/spec/valuesFiles/0
+      value: ./charts/organization-service/values.dev.yaml
+  target:
+    group: helm.toolkit.fluxcd.io
+    version: v2
+    kind: HelmRelease
+    name: organization-service
+    namespace: ostock

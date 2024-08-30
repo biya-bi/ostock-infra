@@ -2,3 +2,8 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
 - angular-frontend.yaml
+- config-service.yaml
+- eureka-service.yaml
+- gateway-service.yaml
+- licensing-service.yaml
+- organization-service.yaml
