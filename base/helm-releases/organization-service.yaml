@@ -12,5 +12,6 @@ spec:
         kind: GitRepository
         name: ostock-helm
       interval: 10m
+      reconcileStrategy: Revision
       valuesFiles:
         - ./charts/organization-service/values.yaml
