@@ -12,6 +12,5 @@ spec:
         kind: GitRepository
         name: ostock-helm
       interval: 10m
-      reconcileStrategy: Revision
       valuesFiles:
         - ./charts/angular-frontend/values.yaml
