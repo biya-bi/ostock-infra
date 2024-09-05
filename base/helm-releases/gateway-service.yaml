@@ -7,10 +7,11 @@ spec:
   interval: 10m
   chart:
     spec:
-      chart: ./charts/gateway-service
+      chart: '.'
       sourceRef:
         kind: GitRepository
-        name: ostock-helm
+        name: gateway-service-chart
       interval: 10m
+      reconcileStrategy: Revision
       valuesFiles:
-        - ./charts/gateway-service/values.yaml
+        - values.yaml

@@ -7,10 +7,11 @@ spec:
   interval: 10m
   chart:
     spec:
-      chart: ./charts/licensing-service
+      chart: '.'
       sourceRef:
         kind: GitRepository
-        name: ostock-helm
+        name: licensing-service-chart
       interval: 10m
+      reconcileStrategy: Revision
       valuesFiles:
-        - ./charts/licensing-service/values.yaml
+        - values.yaml

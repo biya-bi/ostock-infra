@@ -1,7 +1,7 @@
 apiVersion: notification.toolkit.fluxcd.io/v1beta3
 kind: Alert
 metadata:
-  name: maven-helm
+  name: config-service
   namespace: ostock
 spec:
   providerRef:
@@ -10,16 +10,80 @@ spec:
   eventMetadata:
     mavenContextDir: '.'
     helmChartReleaseNamespace: ostock
-    helmChartsDir: charts
-    helmChartRepoUrl: git@github.com:biya-bi/ostock-helm.git
+    helmChartsDir: '.'
+    helmChartRepoUrl: git@github.com:biya-bi/ostock-config-service-chart.git
   eventSources:
     - kind: GitRepository
       name: config-service
+---
+apiVersion: notification.toolkit.fluxcd.io/v1beta3
+kind: Alert
+metadata:
+  name: eureka-service
+  namespace: ostock
+spec:
+  providerRef:
+    name: maven-helm
+  eventSeverity: info
+  eventMetadata:
+    mavenContextDir: '.'
+    helmChartReleaseNamespace: ostock
+    helmChartsDir: '.'
+    helmChartRepoUrl: git@github.com:biya-bi/ostock-eureka-service-chart.git
+  eventSources:
     - kind: GitRepository
       name: eureka-service
-    - kind: GitRepository
-      name: organization-service
-    - kind: GitRepository
-      name: licensing-service
+---
+apiVersion: notification.toolkit.fluxcd.io/v1beta3
+kind: Alert
+metadata:
+  name: gateway-service
+  namespace: ostock
+spec:
+  providerRef:
+    name: maven-helm
+  eventSeverity: info
+  eventMetadata:
+    mavenContextDir: '.'
+    helmChartReleaseNamespace: ostock
+    helmChartsDir: '.'
+    helmChartRepoUrl: git@github.com:biya-bi/ostock-gateway-service-chart.git
+  eventSources:
     - kind: GitRepository
       name: gateway-service
+---
+apiVersion: notification.toolkit.fluxcd.io/v1beta3
+kind: Alert
+metadata:
+  name: licensing-service
+  namespace: ostock
+spec:
+  providerRef:
+    name: maven-helm
+  eventSeverity: info
+  eventMetadata:
+    mavenContextDir: '.'
+    helmChartReleaseNamespace: ostock
+    helmChartsDir: '.'
+    helmChartRepoUrl: git@github.com:biya-bi/ostock-licensing-service-chart.git
+  eventSources:
+    - kind: GitRepository
+      name: licensing-service
+---
+apiVersion: notification.toolkit.fluxcd.io/v1beta3
+kind: Alert
+metadata:
+  name: organization-service
+  namespace: ostock
+spec:
+  providerRef:
+    name: maven-helm
+  eventSeverity: info
+  eventMetadata:
+    mavenContextDir: '.'
+    helmChartReleaseNamespace: ostock
+    helmChartsDir: '.'
+    helmChartRepoUrl: git@github.com:biya-bi/ostock-organization-service-chart.git
+  eventSources:
+    - kind: GitRepository
+      name: organization-service

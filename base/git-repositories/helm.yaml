@@ -1,17 +1,77 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
-  name: ostock-helm
+  name: angular-frontend-chart
   namespace: ostock
 spec:
   interval: 1m
-  url: ssh://github.com/biya-bi/ostock-helm.git
+  url: ssh://github.com/biya-bi/ostock-angular-frontend-chart.git
   ref:
     branch: develop
   secretRef:
     name: ssh-rsa-credentials
-  ignore: |
-    # Exclude all
-    /*
-    # Include charts directory
-    !/charts/
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: config-service-chart
+  namespace: ostock
+spec:
+  interval: 1m
+  url: ssh://github.com/biya-bi/ostock-config-service-chart.git
+  ref:
+    branch: develop
+  secretRef:
+    name: ssh-rsa-credentials
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: eureka-service-chart
+  namespace: ostock
+spec:
+  interval: 1m
+  url: ssh://github.com/biya-bi/ostock-eureka-service-chart.git
+  ref:
+    branch: develop
+  secretRef:
+    name: ssh-rsa-credentials
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: gateway-service-chart
+  namespace: ostock
+spec:
+  interval: 1m
+  url: ssh://github.com/biya-bi/ostock-gateway-service-chart.git
+  ref:
+    branch: develop
+  secretRef:
+    name: ssh-rsa-credentials
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: licensing-service-chart
+  namespace: ostock
+spec:
+  interval: 1m
+  url: ssh://github.com/biya-bi/ostock-licensing-service-chart.git
+  ref:
+    branch: develop
+  secretRef:
+    name: ssh-rsa-credentials
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: organization-service-chart
+  namespace: ostock
+spec:
+  interval: 1m
+  url: ssh://github.com/biya-bi/ostock-organization-service-chart.git
+  ref:
+    branch: develop
+  secretRef:
+    name: ssh-rsa-credentials

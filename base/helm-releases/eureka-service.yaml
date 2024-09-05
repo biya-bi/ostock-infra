@@ -7,10 +7,11 @@ spec:
   interval: 10m
   chart:
     spec:
-      chart: ./charts/eureka-service
+      chart: '.'
       sourceRef:
         kind: GitRepository
-        name: ostock-helm
+        name: eureka-service-chart
       interval: 10m
+      reconcileStrategy: Revision
       valuesFiles:
-        - ./charts/eureka-service/values.yaml
+        - values.yaml

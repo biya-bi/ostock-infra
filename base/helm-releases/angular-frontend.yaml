@@ -7,10 +7,11 @@ spec:
   interval: 10m
   chart:
     spec:
-      chart: ./charts/angular-frontend
+      chart: '.'
       sourceRef:
         kind: GitRepository
-        name: ostock-helm
+        name: angular-frontend-chart
       interval: 10m
+      reconcileStrategy: Revision
       valuesFiles:
-        - ./charts/angular-frontend/values.yaml
+        - values.yaml

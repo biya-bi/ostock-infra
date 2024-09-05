@@ -26,7 +26,7 @@ patches:
 - patch: |-
     - op: replace
       path: /spec/chart/spec/valuesFiles/0
-      value: ./charts/angular-frontend/values.dev.yaml
+      value: values.dev.yaml
   target:
     group: helm.toolkit.fluxcd.io
     version: v2
@@ -36,7 +36,7 @@ patches:
 - patch: |-
     - op: replace
       path: /spec/chart/spec/valuesFiles/0
-      value: ./charts/config-service/values.dev.yaml
+      value: values.dev.yaml
   target:
     group: helm.toolkit.fluxcd.io
     version: v2
@@ -46,7 +46,7 @@ patches:
 - patch: |-
     - op: replace
       path: /spec/chart/spec/valuesFiles/0
-      value: ./charts/eureka-service/values.dev.yaml
+      value: values.dev.yaml
   target:
     group: helm.toolkit.fluxcd.io
     version: v2
@@ -56,7 +56,7 @@ patches:
 - patch: |-
     - op: replace
       path: /spec/chart/spec/valuesFiles/0
-      value: ./charts/gateway-service/values.dev.yaml
+      value: values.dev.yaml
   target:
     group: helm.toolkit.fluxcd.io
     version: v2
@@ -66,7 +66,7 @@ patches:
 - patch: |-
     - op: replace
       path: /spec/chart/spec/valuesFiles/0
-      value: ./charts/licensing-service/values.dev.yaml
+      value: values.dev.yaml
   target:
     group: helm.toolkit.fluxcd.io
     version: v2
@@ -76,7 +76,7 @@ patches:
 - patch: |-
     - op: replace
       path: /spec/chart/spec/valuesFiles/0
-      value: ./charts/organization-service/values.dev.yaml
+      value: values.dev.yaml
   target:
     group: helm.toolkit.fluxcd.io
     version: v2
