@@ -13,6 +13,7 @@ spec:
     helmChartReleaseNamespace: ostock
     helmChartsDir: '.'
     helmChartRepoUrl: git@github.com:biya-bi/ostock-angular-frontend-chart.git
+    helmChartRepoRevision: develop
   eventSources:
     - kind: GitRepository
       name: angular-frontend

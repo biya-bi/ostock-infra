@@ -12,6 +12,7 @@ spec:
     helmChartReleaseNamespace: ostock
     helmChartsDir: '.'
     helmChartRepoUrl: git@github.com:biya-bi/ostock-config-service-chart.git
+    helmChartRepoRevision: develop
   eventSources:
     - kind: GitRepository
       name: config-service
@@ -30,6 +31,7 @@ spec:
     helmChartReleaseNamespace: ostock
     helmChartsDir: '.'
     helmChartRepoUrl: git@github.com:biya-bi/ostock-eureka-service-chart.git
+    helmChartRepoRevision: develop
   eventSources:
     - kind: GitRepository
       name: eureka-service
@@ -48,6 +50,7 @@ spec:
     helmChartReleaseNamespace: ostock
     helmChartsDir: '.'
     helmChartRepoUrl: git@github.com:biya-bi/ostock-gateway-service-chart.git
+    helmChartRepoRevision: develop
   eventSources:
     - kind: GitRepository
       name: gateway-service
@@ -66,6 +69,7 @@ spec:
     helmChartReleaseNamespace: ostock
     helmChartsDir: '.'
     helmChartRepoUrl: git@github.com:biya-bi/ostock-licensing-service-chart.git
+    helmChartRepoRevision: develop
   eventSources:
     - kind: GitRepository
       name: licensing-service
@@ -84,6 +88,7 @@ spec:
     helmChartReleaseNamespace: ostock
     helmChartsDir: '.'
     helmChartRepoUrl: git@github.com:biya-bi/ostock-organization-service-chart.git
+    helmChartRepoRevision: develop
   eventSources:
     - kind: GitRepository
       name: organization-service
