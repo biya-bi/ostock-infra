@@ -3,6 +3,8 @@ kind: Alert
 metadata:
   name: angular-frontend
   namespace: ostock
+  labels:
+    category: microservice
 spec:
   providerRef:
     name: node-helm

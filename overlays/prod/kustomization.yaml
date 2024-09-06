@@ -89,3 +89,13 @@ patches:
     kind: HelmRelease
     name: organization-service
     namespace: ostock
+- patch: |-
+    - op: replace
+      path: /spec/eventMetadata/helmChartRepoRevision
+      value: main
+  target:
+    group: notification.toolkit.fluxcd.io
+    version: v1beta3
+    kind: Alert
+    namespace: ostock
+    labelSelector: category=microservice

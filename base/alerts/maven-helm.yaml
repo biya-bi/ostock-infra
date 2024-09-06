@@ -3,6 +3,8 @@ kind: Alert
 metadata:
   name: config-service
   namespace: ostock
+  labels:
+    category: microservice
 spec:
   providerRef:
     name: maven-helm
@@ -22,6 +24,8 @@ kind: Alert
 metadata:
   name: eureka-service
   namespace: ostock
+  labels:
+    category: microservice
 spec:
   providerRef:
     name: maven-helm
@@ -41,6 +45,8 @@ kind: Alert
 metadata:
   name: gateway-service
   namespace: ostock
+  labels:
+    category: microservice
 spec:
   providerRef:
     name: maven-helm
@@ -60,6 +66,8 @@ kind: Alert
 metadata:
   name: licensing-service
   namespace: ostock
+  labels:
+    category: microservice
 spec:
   providerRef:
     name: maven-helm
@@ -79,6 +87,8 @@ kind: Alert
 metadata:
   name: organization-service
   namespace: ostock
+  labels:
+    category: microservice
 spec:
   providerRef:
     name: maven-helm
