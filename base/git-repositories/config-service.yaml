@@ -9,4 +9,4 @@ spec:
     branch: develop
   secretRef:
     name: ssh-rsa-credentials
-  url: ssh://github.com/biya-bi/ostock-config-service.git
+  url: ssh://github.com/biya-bi/nguiland-config-service.git
