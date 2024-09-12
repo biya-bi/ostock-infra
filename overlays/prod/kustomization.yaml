@@ -77,7 +77,7 @@ patches:
     group: helm.toolkit.fluxcd.io
     version: v2
     kind: HelmRelease
-    name: licensing-service
+    name: license-service
     namespace: ostock
 - patch: |-
     - op: replace

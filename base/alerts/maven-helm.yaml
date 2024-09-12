@@ -64,7 +64,7 @@ spec:
 apiVersion: notification.toolkit.fluxcd.io/v1beta3
 kind: Alert
 metadata:
-  name: licensing-service
+  name: license-service
   namespace: ostock
   labels:
     category: microservice
@@ -76,11 +76,11 @@ spec:
     mavenContextDir: '.'
     helmChartReleaseNamespace: ostock
     helmChartsDir: '.'
-    helmChartRepoUrl: git@github.com:biya-bi/ostock-licensing-service-chart.git
+    helmChartRepoUrl: git@github.com:biya-bi/ostock-license-service-chart.git
     helmChartRepoRevision: develop
   eventSources:
     - kind: GitRepository
-      name: licensing-service
+      name: license-service
 ---
 apiVersion: notification.toolkit.fluxcd.io/v1beta3
 kind: Alert

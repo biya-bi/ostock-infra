@@ -53,11 +53,11 @@ spec:
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
-  name: licensing-service-chart
+  name: license-service-chart
   namespace: ostock
 spec:
   interval: 1m
-  url: ssh://github.com/biya-bi/ostock-licensing-service-chart.git
+  url: ssh://github.com/biya-bi/ostock-license-service-chart.git
   ref:
     branch: develop
   secretRef:

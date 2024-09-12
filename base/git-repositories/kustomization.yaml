@@ -7,6 +7,6 @@ resources:
 - eureka-service.yaml
 - gateway-service.yaml
 - helm.yaml
-- licensing-service.yaml
+- license-service.yaml
 - organization-service.yaml
 - secrets.yaml

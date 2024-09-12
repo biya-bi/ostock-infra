@@ -5,5 +5,5 @@ resources:
 - config-service.yaml
 - eureka-service.yaml
 - gateway-service.yaml
-- licensing-service.yaml
+- license-service.yaml
 - organization-service.yaml

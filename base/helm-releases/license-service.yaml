@@ -1,7 +1,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: licensing-service
+  name: license-service
   namespace: ostock
 spec:
   interval: 10m
@@ -10,7 +10,7 @@ spec:
       chart: '.'
       sourceRef:
         kind: GitRepository
-        name: licensing-service-chart
+        name: license-service-chart
       interval: 10m
       reconcileStrategy: Revision
       valuesFiles:
