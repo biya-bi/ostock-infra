@@ -10,3 +10,4 @@ resources:
 - license-service.yaml
 - organization-service.yaml
 - secrets.yaml
+- orm.yaml

@@ -12,3 +12,5 @@ spec:
   eventSources:
     - kind: GitRepository
       name: cross-cutting-concerns
+    - kind: GitRepository
+      name: orm
