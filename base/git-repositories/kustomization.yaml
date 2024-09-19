@@ -4,6 +4,7 @@ resources:
 - angular-frontend.yaml
 - config-service.yaml
 - cross-cutting-concerns.yaml
+- dto.yaml
 - eureka-service.yaml
 - gateway-service.yaml
 - helm.yaml
