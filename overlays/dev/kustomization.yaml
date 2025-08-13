@@ -17,7 +17,7 @@ patches:
 - patch: |-
     - op: replace
       path: /data/jwt-issuer-uri
-      value: https://devkeycloak.nguiland.org/realms/ostock
+      value: https://dev-keycloak.nguiland.org/realms/ostock
   target:
     version: v1
     kind: ConfigMap
