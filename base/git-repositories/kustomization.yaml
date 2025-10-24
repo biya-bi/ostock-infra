@@ -5,6 +5,7 @@ resources:
 - config-service.yaml
 - cross-cutting-concerns.yaml
 - dto.yaml
+- ms-parent.yaml
 - eureka-service.yaml
 - gateway-service.yaml
 - helm.yaml

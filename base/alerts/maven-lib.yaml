@@ -16,3 +16,5 @@ spec:
       name: dto
     - kind: GitRepository
       name: orm
+    - kind: GitRepository
+      name: ms-parent
