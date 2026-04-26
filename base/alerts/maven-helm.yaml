@@ -12,8 +12,8 @@ spec:
   eventMetadata:
     mavenContextDir: '.'
     helmChartReleaseNamespace: ostock
-    helmChartsDir: '.'
-    helmChartRepoUrl: git@github.com:biya-bi/ostock-config-service-chart.git
+    helmChartsDir: config-service
+    helmChartRepoUrl: git@github.com:biya-bi/ostock-helm.git
     helmChartRepoRevision: develop
   eventSources:
     - kind: GitRepository
@@ -33,8 +33,8 @@ spec:
   eventMetadata:
     mavenContextDir: '.'
     helmChartReleaseNamespace: ostock
-    helmChartsDir: '.'
-    helmChartRepoUrl: git@github.com:biya-bi/ostock-eureka-service-chart.git
+    helmChartsDir: eureka-service
+    helmChartRepoUrl: git@github.com:biya-bi/ostock-helm.git
     helmChartRepoRevision: develop
   eventSources:
     - kind: GitRepository
@@ -54,8 +54,8 @@ spec:
   eventMetadata:
     mavenContextDir: '.'
     helmChartReleaseNamespace: ostock
-    helmChartsDir: '.'
-    helmChartRepoUrl: git@github.com:biya-bi/ostock-gateway-service-chart.git
+    helmChartsDir: gateway-service
+    helmChartRepoUrl: git@github.com:biya-bi/ostock-helm.git
     helmChartRepoRevision: develop
   eventSources:
     - kind: GitRepository
@@ -75,8 +75,8 @@ spec:
   eventMetadata:
     mavenContextDir: '.'
     helmChartReleaseNamespace: ostock
-    helmChartsDir: '.'
-    helmChartRepoUrl: git@github.com:biya-bi/ostock-license-service-chart.git
+    helmChartsDir: license-service
+    helmChartRepoUrl: git@github.com:biya-bi/ostock-helm.git
     helmChartRepoRevision: develop
   eventSources:
     - kind: GitRepository
@@ -96,8 +96,8 @@ spec:
   eventMetadata:
     mavenContextDir: '.'
     helmChartReleaseNamespace: ostock
-    helmChartsDir: '.'
-    helmChartRepoUrl: git@github.com:biya-bi/ostock-organization-service-chart.git
+    helmChartsDir: organization-service
+    helmChartRepoUrl: git@github.com:biya-bi/ostock-helm.git
     helmChartRepoRevision: develop
   eventSources:
     - kind: GitRepository
