@@ -7,7 +7,7 @@ spec:
   interval: 10m
   chart:
     spec:
-      chart: '.'
+      chart: ./organization-service
       sourceRef:
         kind: GitRepository
         name: organization-service-chart
