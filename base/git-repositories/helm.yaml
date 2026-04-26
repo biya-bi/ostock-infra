@@ -5,11 +5,16 @@ metadata:
   namespace: ostock
 spec:
   interval: 1m
-  url: ssh://github.com/biya-bi/ostock-angular-frontend-chart.git
+  url: ssh://github.com/biya-bi/ostock-helm.git
   ref:
     branch: develop
   secretRef:
     name: ssh-rsa-credentials
+  ignore: |
+    # Exclude all
+    /*
+    # Include specific relevant directory
+    !/angular-frontend/
 ---
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
@@ -18,11 +23,16 @@ metadata:
   namespace: ostock
 spec:
   interval: 1m
-  url: ssh://github.com/biya-bi/ostock-config-service-chart.git
+  url: ssh://github.com/biya-bi/ostock-helm.git
   ref:
     branch: develop
   secretRef:
     name: ssh-rsa-credentials
+  ignore: |
+    # Exclude all
+    /*
+    # Include specific relevant directory
+    !/config-service/
 ---
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
@@ -31,11 +41,16 @@ metadata:
   namespace: ostock
 spec:
   interval: 1m
-  url: ssh://github.com/biya-bi/ostock-eureka-service-chart.git
+  url: ssh://github.com/biya-bi/ostock-helm.git
   ref:
     branch: develop
   secretRef:
     name: ssh-rsa-credentials
+  ignore: |
+    # Exclude all
+    /*
+    # Include specific relevant directory
+    !/eureka-service/
 ---
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
@@ -44,11 +59,16 @@ metadata:
   namespace: ostock
 spec:
   interval: 1m
-  url: ssh://github.com/biya-bi/ostock-gateway-service-chart.git
+  url: ssh://github.com/biya-bi/ostock-helm.git
   ref:
     branch: develop
   secretRef:
     name: ssh-rsa-credentials
+  ignore: |
+    # Exclude all
+    /*
+    # Include specific relevant directory
+    !/gateway-service/
 ---
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
@@ -57,11 +77,16 @@ metadata:
   namespace: ostock
 spec:
   interval: 1m
-  url: ssh://github.com/biya-bi/ostock-license-service-chart.git
+  url: ssh://github.com/biya-bi/ostock-helm.git
   ref:
     branch: develop
   secretRef:
     name: ssh-rsa-credentials
+  ignore: |
+    # Exclude all
+    /*
+    # Include specific relevant directory
+    !/license-service/
 ---
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
@@ -70,8 +95,13 @@ metadata:
   namespace: ostock
 spec:
   interval: 1m
-  url: ssh://github.com/biya-bi/ostock-organization-service-chart.git
+  url: ssh://github.com/biya-bi/ostock-helm.git
   ref:
     branch: develop
   secretRef:
     name: ssh-rsa-credentials
+  ignore: |
+    # Exclude all
+    /*
+    # Include specific relevant directory
+    !/organization-service/
